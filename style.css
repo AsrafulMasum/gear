@@ -238,6 +238,84 @@ header div{
 
 /* products section end */
 
+/* featured section start */
+
+.featured{
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.featured>div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.featured>div>h3{
+  color: #0A0826;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.featured>div>span{
+  color: #6C6C6C;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+/* featured section end */
+
+/* footer section start */
+
+footer{
+  background-color: #0A0826;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+footer>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 300px;
+  text-align: center;
+}
+
+footer>div>h3{
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+footer>div>span{
+  color: #D9DBE1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+/* footer section start */
+
 
 
 
@@ -297,13 +375,29 @@ header div{
     grid-template-columns: 330px;
   }
 
+  .featured{
+    padding: 2rem 0;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .featured>img{
+    width: 90%;
+  }
+
+  .featured>div{
+    width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+
 }
 
 
 
 
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1200px) {
   header{
     flex-direction: column;
     gap: 1.25rem;
@@ -356,6 +450,22 @@ header div{
 
   .product-container{
     grid-template-columns: 330px 330px;
+  }
+
+  .featured{
+    padding: 2rem 0;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .featured>img{
+    width: 90%;
+  }
+
+  .featured>div{
+    width: 80%;
+    align-items: center;
+    text-align: center;
   }
 
 }
